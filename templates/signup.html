@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX - Signup</title>
+    <link rel="stylesheet" href="static/style/signup.css">
+</head>
+<body>
+    <div class="main">
+        <div class="showlogo">
+            <img src="static/img/death.png" id="logo-img">
+            <h1 id="logo-txt">SIGNUP</h1>
+        </div>
+        <div class="form-div">
+            <form method="post" action="/signup" autocomplete="off">
+                <input type="text" name="username" placeholder="Username" autocomplete="off" class="input-box">
+                <input type="text" name="email" placeholder="Email" autocomplete="off" class="input-box">
+                <input type="password" name="password" placeholder="Password" class="input-box">
+                <input type="submit" name="submit" title="Login" value="Signup" id="login-btn">
+            </form>
+
+            {% if error is defined %}
+            <p id="invalidmsg">{{error}}</p>
+            {% endif %}
+            <a href="/" class="signup">Already have a account?</a>
+
+
+           
+            
+        </div>
+    </div>
+
+</body>
+</html>

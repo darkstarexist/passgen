@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+}
+
+.btn-div{
+    margin-top: 5vh;
+
+}
+
+table{
+    background-color: #212121;
+    margin-top: 1%;
+}
+
+#passgen-btn{
+    font-size: 1.2em;
+    padding: 8px 16px;
+    border: 2px solid cyan;
+    color: #fb1466;
+    background-color: #212121;
+    border-radius: 0.8em;
+    margin-top: 5%;
+    margin: 0px 18px;
+    transition: all .8s;
+}
+
+#passgen-btn a{
+    text-decoration: none;
+    color: aqua;
+    transition: all .8s;
+}
+
+#passgen-btn a:hover{
+    color: #fb1466;
+}
+
+#passgen-btn:hover{
+    border-color: #fb1466;
+    color: cyan;
+}

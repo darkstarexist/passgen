@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0d1117;
+    display: flex;
+    /* flex-direction: row; */
+    /* position: sticky; */
+    align-items: center;
+    justify-content: center;
+}
+
+.signup{
+    text-decoration: none;
+    color: red;
+    font-size: 22px;
+    
+}
+
+.signup:hover{
+    color: aqua;
+}
+
+.main{
+    display: flex;
+    height: 70vh;
+    width: 35vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.showlogo img{
+    height: 80px;
+    width: 80px;
+}
+
+.showlogo h1{
+    color: #fb1466;
+    font-size: 64px;
+    margin-left: 22px;
+}
+
+.showlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0px 16px 0px;
+}
+
+.form-div form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=password]::-ms-reveal,input[type=password]::-ms-clear{display: none;} /*remove the show password icon in password input*/
+
+.form-div form input{
+    font-size: 1.5em;
+    background-color: #212121;
+    text-align: center;
+    margin: 8px 0px;
+    border:1px solid cyan;
+    color: cyan;
+    padding: 16px 46px;
+}
+
+.form-div form input::placeholder{
+    color: #5e5a5b;
+}
+
+
+
+.main{
+    background-color: #212121;
+}
+
+#login-btn{
+    margin:8px 0px 32px 0px ;
+    padding: 8px 12px;
+    color: #fb1466;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: rgb(50, 55, 55);
+
+}
+
+#invalidmsg{
+    color: cyan;
+    font-size: 1.6em;
+
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box:focus{
+    /* border: cyan; */
+    outline: none;
+    border:2px solid #fb1466;
+    /* transition: 2s all; */
+}
+
+#input-btn:hover{
+    font-size: 1em;
+    background-color: #212121;
+}
+
+#logo-txt{
+    font-size: 4em;
+}
+
+@media only screen and (max-width:455px) {
+    .main{
+        width: 85vw;
+    }
+    .form-div form input{ 
+        font-size: 0.8em;
+    }
+    #logo-txt{
+        font-size: 2em;
+    }
+
+    .showlogo img{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width:455px) and (max-width:750px){
+    .main{
+        width: 85vw;
+    }
+}

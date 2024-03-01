@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX - Login</title>
+    <link rel="stylesheet" href="static/style/verification.css">
+</head>
+<body>
+    <div class="main">
+        <div class="showlogo">
+            <img src="static/img/death.png" id="logo-img">
+            <h1 id="logo-txt">VERIFICATION</h1>
+        </div>
+        <div class="form-div">
+            <p id="email-txt">we have sended a verification code on {{email}}</p>
+            <form method="post" action="/verify" autocomplete="off">
+                <input type="number" name="code" placeholder="Verification Code" autocomplete="off" class="input-box">
+                <input type="submit" name="submit" title="code" value="Submit" id="login-btn">
+            </form>
+            {% if error is defined %}
+                <p>{{error}}</p>
+            {% endif %}
+
+
+
+
+
+
+           
+            
+        </div>
+    </div>
+
+</body>
+</html>
